@@ -1,9 +1,42 @@
 <html>
   <head>
     <title>pages-shape</title>
+    <style type="text/css">
+      body {
+        background-color: black;
+        padding: 10px;
+      }
+      * {
+        color: green;
+        font-size: 12pt;
+        font-family: monospace;
+      }
+      .line {
+        background-color: green;
+        height: 1px;
+      }
+      .about {
+        padding: 20px;
+        width: 400px;
+        display: none;
+      }
+      .chart {
+      }
+    </style>
     <script src="jquery.js"></script>
+    <script src="underscore.js"></script>
     <script src="pages-shape.js"></script>
   </head>
   <body>
+    <div class="chart">
+    </div>
+    <div class="about">
+      <p>This is a chart of the shape of the indented JSON data for the entire CouchOne pages source.</p>
+      <p>One pixel is used per character.</p>
+      <ul>
+        <li><a href="https://github.com/benatkin/pages-shape">Source of this presentation</a></li>
+        <li><a href="pages.json">the JSON data</a></li>
+      </ul>
+    </div>
   </body>
 </html>
